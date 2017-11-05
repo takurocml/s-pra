@@ -4,6 +4,8 @@ require 'slim'
 # Page options, layouts, aliases and proxies
 ###
 
+activate :livereload
+
 # Per-page layout changes:
 #
 # With no layout

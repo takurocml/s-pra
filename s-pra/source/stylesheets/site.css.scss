@@ -1,67 +1,93 @@
 @charset "utf-8";
 @import "normalize";
 
-body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+ul {
+  li {
+    list-style: none;
+  }
 }
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
+.bold {
+  font-size: 12px;
+  font-weight: bold;
 }
 
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
+.white {
+  color: white;
 }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
+.border-right-bk {
+  border-right: 1px solid #000000;
+}
 
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
+.btn {
+  display: inline-block;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  background-color: skyblue;
+}
+
+header.header {
+  width: 100%;
+  background-color: black;
+  nav {
+    height: 70px;
+    .logo {
+      width: auto;
+      height: 50px;
+      float: left;
+      margin: 10px 15px 10px 0px;
+      vertical-align: middle;
+    }
+    ul.menu {
+      float: left;
+      margin: 0px;
+      padding: 0px 0px 0px 0px;
+      li.menulist {
+        float: left;
+        height: 70px;
+        padding: 0px 15px;
+        line-height: 70px;
+      }
+      li:hover {
+        background-color: white;
+        color: black;
+      }
     }
   }
-}
-
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
-}
-
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
+  .header-right {
+    height: 70px;
+    float:right;
+    vertical-align: middle;
+    ul.function {
+      float: right;
+      margin: 0px;
+      padding: 0px;
+      input {
+        margin-top: 20px;
+      }
+      .search {
+        background-color: blue;
+        padding: 6px 10px;
+        margin: 0px;
+      }
+      li.function {
+        float:left;
+        height: 70px;
+        padding: 0px 15px;
+        span.icon {
+          font-size:30px;
+          line-height: 70px;
+        }
+      }
+      li.icon:hover {
+        background-color: white;
+        color: black;
+      }
+    }
   }
 }

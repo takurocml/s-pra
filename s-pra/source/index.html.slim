@@ -2,9 +2,27 @@
 title: Welcome to Middleman
 ---
 
-.welcome
-  .logo
-    == image_tag 'middleman-logo.svg'
-  h1 Middleman is Watching
-  p.doc
-    == link_to "Read Online Documentation", "http://middlemanapp.com/"
+header.header
+  .container
+    nav
+      img.logo src="./images/logo.png"
+      ul.menu
+        li.menulist.bold.white
+          a href=""メンズ
+        li.menulist.bold.white レディース
+        li.menulist.bold.white.border-right-bk キッズ
+        li.menulist.bold.white スポーツ
+        li.menulist.bold.white.border-right-bk ブランド
+        li.menulist.bold.white カスタマイズ
+      .header-right
+        ul.function
+          li.function
+            input type="text" size="20" placeholder="何をお探しですか"
+            p.bold.white.btn.search
+              span.fa.fa-search 検索
+          li.function.icon
+            span.icon.white
+              i.fa.fa-user-o aria-hidden="true"
+          li.function.icon
+            span.icon.white
+              i.fa.fa-shopping-bag aria-hidden="true"
