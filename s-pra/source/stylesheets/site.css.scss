@@ -8,12 +8,24 @@ ul {
 }
 
 .bold {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .white {
   color: white;
+}
+
+.small {
+  font-size: 12px
+}
+
+.exsmall {
+  font-size: 10px;
+}
+
+.text-narrow {
+  transform: scale(0.8,1);
 }
 
 .border-right-bk {
@@ -28,19 +40,23 @@ ul {
   max-width: 1000px;
   width: 100%;
   margin: auto;
-  background-color: skyblue;
+}
+
+.red {
+  color: red;
 }
 
 header.header {
   width: 100%;
   background-color: black;
   nav {
-    height: 70px;
+    height: 50px;
     .logo {
       width: auto;
-      height: 50px;
+      height: 36px;
       float: left;
-      margin: 10px 15px 10px 0px;
+      margin-right:15px;
+      padding: 6px;
       vertical-align: middle;
     }
     ul.menu {
@@ -49,9 +65,8 @@ header.header {
       padding: 0px 0px 0px 0px;
       li.menulist {
         float: left;
-        height: 70px;
         padding: 0px 15px;
-        line-height: 70px;
+        line-height: 50px;
       }
       li:hover {
         background-color: white;
@@ -60,7 +75,7 @@ header.header {
     }
   }
   .header-right {
-    height: 70px;
+    height: 50px;
     float:right;
     vertical-align: middle;
     ul.function {
@@ -68,20 +83,29 @@ header.header {
       margin: 0px;
       padding: 0px;
       input {
-        margin-top: 20px;
+        text-indent: 8px;
+        padding: 5px;
+        box-sizing: border-box;
+        margin: 10px 0px;
+      }
+      .searchbar {
+        width: 150px;
+        height: 30px;
+        line-height: 30px
       }
       .search {
         background-color: blue;
-        padding: 6px 10px;
+        padding: 0px 10px;
         margin: 0px;
+        height: 30px;
+        line-height: 30px;
       }
       li.function {
         float:left;
-        height: 70px;
         padding: 0px 15px;
         span.icon {
           font-size:30px;
-          line-height: 70px;
+          line-height: 50px;
         }
       }
       li.icon:hover {
@@ -90,4 +114,40 @@ header.header {
       }
     }
   }
+}
+
+.promo-wrapper {
+  margin: 0px;
+  padding: 0px;
+  background-color: silver;
+  ul.promo {
+    margin: 0px;
+    padding: 3px 0px;
+    li.promoicon {
+      float: left;
+      background-color: dimgray;
+      width: 25px;
+      height: 25px;
+      border-radius: 99px;
+      text-align: center;
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+    li.li-narrow {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    li.li-left {
+      float: left;
+    }
+    li.arrow-right {
+
+    }
+  }
+}
+
+main {
+  width: 1000px;
+  height: 1000px;
+  background-color: palegreen;
 }
